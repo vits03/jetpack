@@ -49,7 +49,7 @@ const heart_img = new Image();
 heart_img.src = "../assets/heart.png";
 
 const game_start_background = new Image();
-game_start_background.src = "../assets/game-start-background.png";
+game_start_background.src = "/game-start-background.png";
 
 
 const canvas = document.querySelector("canvas");
