@@ -1,7 +1,7 @@
 
 ///declarations of the images and spritesheets used.
 const platform_img = new Image();
-platform_img.src = "https://vits03.github.io/jetpack-Rush-Game/assets/platform.png";
+platform_img.src = "./jetpack-Rush-Game/assets/platform.png";
 
 const background_img = new Image();
 background_img.src = "../assets/mod.png";
