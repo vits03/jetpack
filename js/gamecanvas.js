@@ -363,7 +363,7 @@ const hearts = [
 ];
 const background_music = new sound("./assets/sound/background-music.mp3");
 const jetpack_sound = new sound("./assets/sound/jetpack.mp3");
-const collision_sound = new sound("../assets/sound/collision.mp3");
+const collision_sound = new sound("./assets/sound/collision.mp3");
 const bullet_sound = new sound("./assets/sound/bullet.wav");
 const monster_collision_sound = new sound("./assets/sound/monstercollision.wav");
 const rocket_approaching_sound = new sound("./assets/sound/rocket.mp3");
@@ -551,7 +551,7 @@ let monster_frame = 1;
 
 function create_monster() {
   let monsters = {};
-  monsters = create_img(`../assets/demon${monster_frame}${monster_frame}.png`);
+  monsters = create_img(`./assets/demon${monster_frame}${monster_frame}.png`);
   if (indexx % 6 == 0) {
     monster_frame++;
   }
