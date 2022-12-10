@@ -475,11 +475,31 @@ window.addEventListener("keydown", ({ keyCode }) => {
   }
 });
 
+window.addEventListener("touchstart", ({ keyCode }) => {
+  spacebar_pressed = true;
+    jetpack_sound.play();
+    if (player.velocity.y >= -10 && player.position.y > 25) {
+      player.velocity.y -= 3;
+    }
+    if (player.velocity.y > 0 && player.position.y > 25) {
+      player.velocity.y = -8;
+    }
+  
+});
+
 window.addEventListener("keyup", ({ keyCode }) => { //keycode is used as key was not working
 
   spacebar_pressed = false;
   jetpack_sound.stop();
 });
+
+
+window.addEventListener("touchend", ({ keyCode }) => { //keycode is used as key was not working
+
+  spacebar_pressed = false;
+  jetpack_sound.stop();
+});
+
 
 function move_bullet() {
   if (bullet.position.x < canvas.width) {
