@@ -4,52 +4,52 @@ const platform_img = new Image();
 platform_img.src = "./assets/platform.png";
 
 const background_img = new Image();
-background_img.src = "../assets/mod.png";
+background_img.src = "./assets/mod.png";
 
 const layer1 = new Image();
-layer1.src = "../assets/layer1.png";
+layer1.src = "./assets/layer1.png";
 
 const layer2 = new Image();
-layer2.src = "../assets/layer2.png";
+layer2.src = "./assets/layer2.png";
 
 const bullet_img = new Image();
-bullet_img.src = "../assets/bullet1.png";
+bullet_img.src = "./assets/bullet1.png";
 
 const layer3 = new Image();
-layer3.src = "../assets/layer3.png";
+layer3.src = "./assets/layer3.png";
 
 const running_sprite = new Image();
-running_sprite.src = "../assets/spritesheets/running.png";
+running_sprite.src = "./assets/spritesheets/running.png";
 
 const running_with_gun_sprite = new Image();
-running_with_gun_sprite.src = "../assets/spritesheets/running_with_gun.png";
+running_with_gun_sprite.src = "./assets/spritesheets/running_with_gun.png";
 
 const flying_with_gun = new Image();
-flying_with_gun.src = "../assets/spritesheets/flying_with_gun.png";
+flying_with_gun.src = "./assets/spritesheets/flying_with_gun.png";
 
 const standing_with_gun = new Image();
-standing_with_gun.src = "../assets/spritesheets/standing.png";
+standing_with_gun.src = "./assets/spritesheets/standing.png";
 
 const dying_with_gun = new Image();
-dying_with_gun.src = "../assets/spritesheets/dying.png";
+dying_with_gun.src = "./assets/spritesheets/dying.png";
 
 const rocket_img = new Image();
-rocket_img.src = "../assets/rocket1.png";
+rocket_img.src = "./assets/rocket1.png";
 
 const wood = new Image();
-wood.src = "../assets/wood.png";
+wood.src = "./assets/wood.png";
 
 const demon_first_frame = new Image();
-demon_first_frame.src = "../assets/demon11.png";
+demon_first_frame.src = "./assets/demon11.png";
 
 const health_potion_img = new Image();
-health_potion_img.src = "../assets/potion.png";
+health_potion_img.src = "./assets/potion.png";
 
 const heart_img = new Image();
-heart_img.src = "../assets/heart.png";
+heart_img.src = "./assets/heart.png";
 
 const game_start_background = new Image();
-game_start_background.src = "../game-start-background.png";
+game_start_background.src = "./assets/game-start-background.png";
 
 
 const canvas = document.querySelector("canvas");
@@ -361,13 +361,13 @@ const hearts = [
   new standard_obj({ x: canvas.width * 0.8 + 64, y: 15, image: heart_img }),
   new standard_obj({ x: canvas.width * 0.8 + 128, y: 15, image: heart_img }),
 ];
-const background_music = new sound("../assets/sound/background-music.mp3");
-const jetpack_sound = new sound("../assets/sound/jetpack.mp3");
+const background_music = new sound("./assets/sound/background-music.mp3");
+const jetpack_sound = new sound("./assets/sound/jetpack.mp3");
 const collision_sound = new sound("../assets/sound/collision.mp3");
-const bullet_sound = new sound("../assets/sound/bullet.wav");
-const monster_collision_sound = new sound("../assets/sound/monstercollision.wav");
-const rocket_approaching_sound = new sound("../assets/sound/rocket.mp3");
-const monster_sound = new sound("../assets/sound/monster.mp3");
+const bullet_sound = new sound("./assets/sound/bullet.wav");
+const monster_collision_sound = new sound("./assets/sound/monstercollision.wav");
+const rocket_approaching_sound = new sound("./assets/sound/rocket.mp3");
+const monster_sound = new sound("./assets/sound/monster.mp3");
 
 //MOVES THE PLATFORMS IN A LOOP 
 function move_platform() {
@@ -713,7 +713,7 @@ window.addEventListener("keydown", (event) => {
 });
 
 //FONT OBJECT DECLARATION
-const myFont = new FontFace("myFont", "url(../font/PoorStory-Regular.ttf)", {
+const myFont = new FontFace("myFont", "url(./font/PoorStory-Regular.ttf)", {
   style: "normal",
   weight: "400",
 });
