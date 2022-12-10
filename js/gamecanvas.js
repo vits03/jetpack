@@ -112,7 +112,7 @@ class Player {
     if (this.is_dead) {
       this.frames_gone += 1;
       console.log(this.frames_gone, this.frames_gone % 90 == 0);
-      if (this.frames_gone % 9 == 0) {
+      if (this.frames_gone % 17 == 0) {
         player.lives -= 1;
       }
       this.is_dead = false;
